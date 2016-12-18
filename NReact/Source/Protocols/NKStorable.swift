@@ -28,7 +28,6 @@ public extension NKStorable {
         objc_sync_enter(self.rx_state)
         
         block(&self.rx_state.value)
-        self.rx_state.value = self.state
         
         objc_sync_exit(self.rx_state)
     }

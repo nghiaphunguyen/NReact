@@ -50,11 +50,11 @@ class TestingViewController<Reactor: NKReactable>: UIViewController where Reacto
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.reactor.execute(action: .fetch)
-        
         self.reactor.stateObservable.map{$0.names}.subscribe(onNext: {
                 print("names \($0)")
         }).addDisposableTo(disposeBag)
+        
+        self.reactor.execute(action: .fetch)
     }
 }
 
