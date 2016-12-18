@@ -27,6 +27,7 @@
 		188511021E063B7100CFA653 /* NKJustAsyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */; };
 		188511031E063B7100CFA653 /* NKJustSyncWoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FF1E063B7100CFA653 /* NKJustSyncWoker.swift */; };
 		188511041E063B7100CFA653 /* NKSyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188511001E063B7100CFA653 /* NKSyncWorker.swift */; };
+		188511061E063F1C00CFA653 /* NKReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188511051E063F1C00CFA653 /* NKReactViewController.swift */; };
 		721A3198F4659AED6C27F8E7 /* Pods_NReact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55924BC32F683CC853868DA /* Pods_NReact.framework */; };
 		9C99742EBC0A06EC5F3A4DF5 /* Pods_NReactUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD663D0B63A691801FEADE2E /* Pods_NReactUITests.framework */; };
 		AC1556FF1F06BB86025478CC /* Pods_NReactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DE656D5485F7927A6CF45A /* Pods_NReactTests.framework */; };
@@ -76,6 +77,7 @@
 		188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKJustAsyncWorker.swift; sourceTree = "<group>"; };
 		188510FF1E063B7100CFA653 /* NKJustSyncWoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKJustSyncWoker.swift; sourceTree = "<group>"; };
 		188511001E063B7100CFA653 /* NKSyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSyncWorker.swift; sourceTree = "<group>"; };
+		188511051E063F1C00CFA653 /* NKReactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKReactViewController.swift; sourceTree = "<group>"; };
 		1E695F947FB92642C5976CEB /* Pods-NReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReactTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NReactTests/Pods-NReactTests.debug.xcconfig"; sourceTree = "<group>"; };
 		346AAE30F9FF6AC805319E99 /* Pods-NReactUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReactUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NReactUITests/Pods-NReactUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		357A06F0289A2052DBBF1012 /* Pods-NReact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReact.release.xcconfig"; path = "Pods/Target Support Files/Pods-NReact/Pods-NReact.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				188510FC1E063B7100CFA653 /* Worker */,
 				188510DF1E06272800CFA653 /* NKReactor.swift */,
 				188510E01E06272800CFA653 /* NKStore.swift */,
+				188511051E063F1C00CFA653 /* NKReactViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				188510EF1E06272800CFA653 /* NKStorable.swift in Sources */,
 				188511041E063B7100CFA653 /* NKSyncWorker.swift in Sources */,
 				188510F11E0636E600CFA653 /* NKAsyncWorkable.swift in Sources */,
+				188511061E063F1C00CFA653 /* NKReactViewController.swift in Sources */,
 				188510EA1E06272800CFA653 /* NKActionable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

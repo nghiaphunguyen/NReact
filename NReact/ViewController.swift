@@ -31,30 +31,20 @@ class TestReactor: NKReactor<TestAction, TestState>, NKReactable {
     }
 }
 
-class TestingViewController<Reactor: NKReactable>: UIViewController where Reactor.NKAction == TestAction, Reactor.NKState == TestState {
+class TestingViewController<Reactor: NKReactable>: NKReactViewController<Reactor> where Reactor.NKAction == TestAction, Reactor.NKState == TestState {
     
     let disposeBag = DisposeBag()
-    
-    let reactor: Reactor
-    
-    init(reactor: Reactor) {
-        self.reactor = reactor
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.reactor.stateObservable.map{$0.names}.subscribe(onNext: {
-                print("names \($0)")
-        }).addDisposableTo(disposeBag)
-        
         self.reactor.execute(action: .fetch)
+    }
+    
+    override func setupState() {
+        self.reactor.stateObservable.map{$0.names}.subscribe(onNext: {
+            print("names \($0)")
+        }).addDisposableTo(disposeBag)
     }
 }
 
