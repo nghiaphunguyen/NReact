@@ -9,8 +9,8 @@
 import Foundation
 import RxSwift
 
-public class NKStore<State: NKInitable>: NSObject, NKStorable {
+open class NKStore<State: NKInitable>: NSObject, NKStorable {
     public typealias NKState = State
     
-    public let rx_state = Variable<State>(NKState())
+    open let rx_state = Variable<State>(NKState())
 }

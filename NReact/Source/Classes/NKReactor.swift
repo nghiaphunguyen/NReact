@@ -9,10 +9,10 @@
 import Foundation
 import RxSwift
 
-public class NKReactor<Action, State: NKInitable>: NKStore<State> {
+open class NKReactor<Action, State: NKInitable>: NKStore<State> {
     public typealias NKAction = Action
     
-    public var stateObservable: Observable<NKState> {
+    open var stateObservable: Observable<NKState> {
         return self.rx_state.asObservable().observeOn(MainScheduler.instance)
     }
 }
