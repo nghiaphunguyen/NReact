@@ -21,13 +21,13 @@
 		188510ED1E06272800CFA653 /* NKStatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E51E06272800CFA653 /* NKStatable.swift */; };
 		188510EE1E06272800CFA653 /* NKStateMutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E61E06272800CFA653 /* NKStateMutable.swift */; };
 		188510EF1E06272800CFA653 /* NKStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E71E06272800CFA653 /* NKStorable.swift */; };
-		188510F11E0636E600CFA653 /* NKAsyncWorkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510F01E0636E600CFA653 /* NKAsyncWorkable.swift */; };
 		188510F31E06388600CFA653 /* NKSyncWorkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510F21E06388600CFA653 /* NKSyncWorkable.swift */; };
 		188511011E063B7100CFA653 /* NKAsyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FD1E063B7100CFA653 /* NKAsyncWorker.swift */; };
 		188511021E063B7100CFA653 /* NKJustAsyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */; };
 		188511031E063B7100CFA653 /* NKJustSyncWoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FF1E063B7100CFA653 /* NKJustSyncWoker.swift */; };
 		188511041E063B7100CFA653 /* NKSyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188511001E063B7100CFA653 /* NKSyncWorker.swift */; };
 		188511061E063F1C00CFA653 /* NKReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188511051E063F1C00CFA653 /* NKReactViewController.swift */; };
+		188511081E06465800CFA653 /* NKAsyncWorkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188511071E06465800CFA653 /* NKAsyncWorkable.swift */; };
 		721A3198F4659AED6C27F8E7 /* Pods_NReact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55924BC32F683CC853868DA /* Pods_NReact.framework */; };
 		9C99742EBC0A06EC5F3A4DF5 /* Pods_NReactUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD663D0B63A691801FEADE2E /* Pods_NReactUITests.framework */; };
 		AC1556FF1F06BB86025478CC /* Pods_NReactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DE656D5485F7927A6CF45A /* Pods_NReactTests.framework */; };
@@ -71,13 +71,13 @@
 		188510E51E06272800CFA653 /* NKStatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStatable.swift; sourceTree = "<group>"; };
 		188510E61E06272800CFA653 /* NKStateMutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStateMutable.swift; sourceTree = "<group>"; };
 		188510E71E06272800CFA653 /* NKStorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStorable.swift; sourceTree = "<group>"; };
-		188510F01E0636E600CFA653 /* NKAsyncWorkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAsyncWorkable.swift; sourceTree = "<group>"; };
 		188510F21E06388600CFA653 /* NKSyncWorkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSyncWorkable.swift; sourceTree = "<group>"; };
 		188510FD1E063B7100CFA653 /* NKAsyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAsyncWorker.swift; sourceTree = "<group>"; };
 		188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKJustAsyncWorker.swift; sourceTree = "<group>"; };
 		188510FF1E063B7100CFA653 /* NKJustSyncWoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKJustSyncWoker.swift; sourceTree = "<group>"; };
 		188511001E063B7100CFA653 /* NKSyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSyncWorker.swift; sourceTree = "<group>"; };
 		188511051E063F1C00CFA653 /* NKReactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKReactViewController.swift; sourceTree = "<group>"; };
+		188511071E06465800CFA653 /* NKAsyncWorkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAsyncWorkable.swift; sourceTree = "<group>"; };
 		1E695F947FB92642C5976CEB /* Pods-NReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReactTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NReactTests/Pods-NReactTests.debug.xcconfig"; sourceTree = "<group>"; };
 		346AAE30F9FF6AC805319E99 /* Pods-NReactUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReactUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NReactUITests/Pods-NReactUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		357A06F0289A2052DBBF1012 /* Pods-NReact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NReact.release.xcconfig"; path = "Pods/Target Support Files/Pods-NReact/Pods-NReact.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,13 +206,13 @@
 		188510E11E06272800CFA653 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				188511071E06465800CFA653 /* NKAsyncWorkable.swift */,
 				188510E21E06272800CFA653 /* NKActionable.swift */,
 				188510E31E06272800CFA653 /* NKIntable.swift */,
 				188510E41E06272800CFA653 /* NKReactable.swift */,
 				188510E51E06272800CFA653 /* NKStatable.swift */,
 				188510E61E06272800CFA653 /* NKStateMutable.swift */,
 				188510E71E06272800CFA653 /* NKStorable.swift */,
-				188510F01E0636E600CFA653 /* NKAsyncWorkable.swift */,
 				188510F21E06388600CFA653 /* NKSyncWorkable.swift */,
 			);
 			path = Protocols;
@@ -522,6 +522,7 @@
 				1860261F1DBF2DB800014635 /* ViewController.swift in Sources */,
 				188511021E063B7100CFA653 /* NKJustAsyncWorker.swift in Sources */,
 				1860261D1DBF2DB800014635 /* AppDelegate.swift in Sources */,
+				188511081E06465800CFA653 /* NKAsyncWorkable.swift in Sources */,
 				188510EE1E06272800CFA653 /* NKStateMutable.swift in Sources */,
 				188510EC1E06272800CFA653 /* NKReactable.swift in Sources */,
 				188510E91E06272800CFA653 /* NKStore.swift in Sources */,
@@ -533,7 +534,6 @@
 				188510F31E06388600CFA653 /* NKSyncWorkable.swift in Sources */,
 				188510EF1E06272800CFA653 /* NKStorable.swift in Sources */,
 				188511041E063B7100CFA653 /* NKSyncWorker.swift in Sources */,
-				188510F11E0636E600CFA653 /* NKAsyncWorkable.swift in Sources */,
 				188511061E063F1C00CFA653 /* NKReactViewController.swift in Sources */,
 				188510EA1E06272800CFA653 /* NKActionable.swift in Sources */,
 			);
