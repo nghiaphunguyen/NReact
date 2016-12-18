@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-open class NKJustAsyncWorker<T> : NKSyncWorker<T> {
+open class NKJustSyncWorker<T> : NKSyncWorker<T> {
     let value: T
     
     public init(value: T) {
