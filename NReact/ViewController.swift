@@ -26,6 +26,13 @@ class TestReactor: NKReactor<TestAction, TestState>, NKReactable {
             self.changeState({ (state: inout TestState) in
                 state.names = ["Nghia"]
             })
+            
+            DispatchQueue.main.async {
+                self.changeState({ (state: inout TestState) in
+                    state.error = nil
+                    state.names = ["Hieu"]
+                })
+            }
             return
         }
     }
@@ -42,7 +49,9 @@ class TestingViewController<Reactor: NKReactable>: NKReactViewController<Reactor
     }
     
     override func setupState() {
-        self.reactor.stateObservable.map{$0.names}.subscribe(onNext: {
+        self.reactor.stateObservable.map{$0.names}.distinctUntilChanged {
+            $0.0 == $0.1
+            }.subscribe(onNext: {
             print("names \($0)")
         }).addDisposableTo(disposeBag)
     }

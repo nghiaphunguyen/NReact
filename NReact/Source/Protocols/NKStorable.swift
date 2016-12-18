@@ -25,10 +25,6 @@ public extension NKStorable {
     }
     
     public func changeState(_ block: (inout NKState) -> Void) {
-        objc_sync_enter(self.rx_state)
-        
         block(&self.rx_state.value)
-        
-        objc_sync_exit(self.rx_state)
     }
 }
