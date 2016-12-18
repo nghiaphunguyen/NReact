@@ -9,6 +9,7 @@
 import Foundation
 
 public protocol NKSyncWorkable {
-    associatedtype WorkType
-    func execute() -> WorkType
+    associatedtype NKWorkType
+    associatedtype NKPayload
+    func execute(with payload: NKPayload) -> NKWorkType
 }

@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-open class NKReactor<Action, State: NKInitable>: NKStore<State> {
+open class NKReactor<State: NKInitable, Action>: NKStore<State> {
     public typealias NKAction = Action
     
     open var stateObservable: Observable<NKState> {

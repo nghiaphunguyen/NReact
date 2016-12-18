@@ -8,11 +8,12 @@
 
 import Foundation
 
-open class NKSyncWorker<T>: NSObject, NKSyncWorkable {
+open class NKSyncWorker<T, P>: NSObject, NKSyncWorkable {
     
-    public typealias WorkType = T
+    public typealias NKWorkType = T
+    public typealias NKPayload = P
     
-    open func execute() -> T {
+    open func execute(with payload: P) -> T {
         fatalError("Function hasn't implemented yet.")
     }
 }

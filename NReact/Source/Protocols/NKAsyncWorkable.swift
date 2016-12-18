@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 
 public protocol NKAsyncWorkable {
-    associatedtype WorkType
-    func execute() -> Observable<WorkType>
+    associatedtype NKWorkType
+    associatedtype NKPayload
+    func execute(with payload: NKPayload) -> Observable<NKWorkType>
 }

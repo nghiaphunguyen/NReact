@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-open class NKJustSyncWorker<T> : NKSyncWorker<T> {
+open class NKJustSyncWorker<T, P> : NKSyncWorker<T, P> {
     let value: T
     
     public init(value: T) {
@@ -18,7 +18,7 @@ open class NKJustSyncWorker<T> : NKSyncWorker<T> {
         super.init()
     }
     
-    override open func execute() -> T {
+    override open func execute(with payload: NKPayload) -> T {
         return self.value
     }
 }

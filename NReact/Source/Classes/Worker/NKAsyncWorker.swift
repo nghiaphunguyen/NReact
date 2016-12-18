@@ -9,11 +9,12 @@
 import Foundation
 import RxSwift
 
-open class NKAsyncWorker<T>: NSObject, NKAsyncWorkable {
+open class NKAsyncWorker<T, P>: NSObject, NKAsyncWorkable {
     
-    public typealias WorkType = T
+    public typealias NKWorkType = T
+    public typealias NKPayload = P
     
-    open func execute() -> Observable<WorkType> {
+    open func execute(with payload: P) -> Observable<T> {
         fatalError("Function hasn't implemented yet.")
     }
 }

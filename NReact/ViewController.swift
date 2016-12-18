@@ -19,7 +19,7 @@ enum TestAction {
     case fetch
 }
 
-class TestReactor: NKReactor<TestAction, TestState>, NKReactable {
+class TestReactor: NKReactor<TestState, TestAction>, NKReactable {
     func execute(action: TestAction) {
         switch action {
         case .fetch:
