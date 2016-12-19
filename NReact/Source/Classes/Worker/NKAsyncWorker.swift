@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-open class NKAsyncWorker<T, P>: NSObject, NKAsyncWorkable {
+open class NKAsyncWorker<T, P>: NKObject, NKAsyncWorkable {
     
     public typealias NKWorkType = T
     public typealias NKPayload = P

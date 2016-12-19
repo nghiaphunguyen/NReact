@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class NKSyncWorker<T, P>: NSObject, NKSyncWorkable {
+open class NKSyncWorker<T, P>: NKObject, NKSyncWorkable {
     
     public typealias NKWorkType = T
     public typealias NKPayload = P

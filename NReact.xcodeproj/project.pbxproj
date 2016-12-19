@@ -13,6 +13,7 @@
 		186026271DBF2DB800014635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186026251DBF2DB800014635 /* LaunchScreen.storyboard */; };
 		186026321DBF2DB800014635 /* NReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186026311DBF2DB800014635 /* NReactTests.swift */; };
 		1860263D1DBF2DB800014635 /* NReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860263C1DBF2DB800014635 /* NReactUITests.swift */; };
+		187895781E0800BD001C8DB8 /* NKObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187895771E0800BD001C8DB8 /* NKObject.swift */; };
 		188510E81E06272800CFA653 /* NKReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510DF1E06272800CFA653 /* NKReactor.swift */; };
 		188510E91E06272800CFA653 /* NKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E01E06272800CFA653 /* NKStore.swift */; };
 		188510EA1E06272800CFA653 /* NKActionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E21E06272800CFA653 /* NKActionable.swift */; };
@@ -63,6 +64,7 @@
 		186026381DBF2DB800014635 /* NReactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NReactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1860263C1DBF2DB800014635 /* NReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NReactUITests.swift; sourceTree = "<group>"; };
 		1860263E1DBF2DB800014635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187895771E0800BD001C8DB8 /* NKObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKObject.swift; sourceTree = "<group>"; };
 		188510DF1E06272800CFA653 /* NKReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKReactor.swift; sourceTree = "<group>"; };
 		188510E01E06272800CFA653 /* NKStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStore.swift; sourceTree = "<group>"; };
 		188510E21E06272800CFA653 /* NKActionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKActionable.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				188510DF1E06272800CFA653 /* NKReactor.swift */,
 				188510E01E06272800CFA653 /* NKStore.swift */,
 				188511051E063F1C00CFA653 /* NKReactViewController.swift */,
+				187895771E0800BD001C8DB8 /* NKObject.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				188510E81E06272800CFA653 /* NKReactor.swift in Sources */,
 				188511031E063B7100CFA653 /* NKJustSyncWoker.swift in Sources */,
 				188510EB1E06272800CFA653 /* NKIntable.swift in Sources */,
+				187895781E0800BD001C8DB8 /* NKObject.swift in Sources */,
 				188511011E063B7100CFA653 /* NKAsyncWorker.swift in Sources */,
 				188510F31E06388600CFA653 /* NKSyncWorkable.swift in Sources */,
 				188510EF1E06272800CFA653 /* NKStorable.swift in Sources */,
