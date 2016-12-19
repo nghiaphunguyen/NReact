@@ -10,5 +10,7 @@ import Foundation
 import RxSwift
 
 open class NKObject: AnyObject {
-    let disposeBag = DisposeBag()
+    public let disposeBag = DisposeBag()
+    
+    public init() {}
 }
