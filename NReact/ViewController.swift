@@ -19,8 +19,8 @@ enum TestAction {
     case fetch
 }
 
-class TestReactor: NKReactor<TestState, TestAction>, NKReactable {
-    func execute(action: TestAction) {
+class TestReactor: NKReactor<TestState, TestAction> {
+    override func execute(action: TestAction) {
         switch action {
         case .fetch:
             self.changeState({ (state: inout TestState) in
@@ -38,7 +38,7 @@ class TestReactor: NKReactor<TestState, TestAction>, NKReactable {
     }
 }
 
-class TestingViewController<Reactor: NKReactable>: NKReactViewController<Reactor> where Reactor.NKAction == TestAction, Reactor.NKState == TestState {
+class TestingViewController: NKReactViewController<TestState, TestAction> {
     
     let disposeBag = DisposeBag()
     
@@ -58,7 +58,7 @@ class TestingViewController<Reactor: NKReactable>: NKReactViewController<Reactor
 }
 
 extension TestingViewController {
-    static var instance: TestingViewController<TestReactor> {
-        return TestingViewController<TestReactor>(reactor: TestReactor())
+    static var instance: TestingViewController {
+        return TestingViewController.init(reactor: TestReactor.init())
     }
 }

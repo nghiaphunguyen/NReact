@@ -8,10 +8,10 @@
 
 import UIKit
 
-open class NKReactViewController<Reactor: NKReactable>: UIViewController {
-    public let reactor: Reactor
+open class NKReactViewController<State: NKInitable, Action>: UIViewController {
+    public let reactor: NKReactor<State, Action>
     
-    public init(reactor: Reactor) {
+    public init(reactor: NKReactor<State, Action>) {
         
         self.reactor = reactor
         
