@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         
-        self.window?.rootViewController = TestingViewController<TestReactor>.instance
+        self.window?.rootViewController = TestingViewController.instance
         self.window?.makeKeyAndVisible()
         
         // Override point for customization after application launch.
