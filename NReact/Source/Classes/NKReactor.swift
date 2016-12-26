@@ -9,12 +9,12 @@
 import Foundation
 import RxSwift
 
-public class NKReactor<State, Action>: NSObject, NKReactable {
-    public var state: State {
+open class NKReactor<State, Action>: NSObject, NKReactable {
+    open var state: State {
         return self as! State
     }
     
-    public var action: Action {
+    open var action: Action {
         return self as! Action
     }
 }

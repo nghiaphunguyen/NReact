@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NReact"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "NReact"
   s.homepage     = "http://corner.com"
   s.license      = "MIT"
