@@ -8,11 +8,10 @@
 
 import UIKit
 
-open class NKReactViewController<State: NKInitable, Action>: UIViewController {
-    public let reactor: NKReactor<State, Action>
+open class NKReactViewController<S, A>: UIViewController {
+    public let reactor: NKReactor<S, A>
     
-    public init(reactor: NKReactor<State, Action>) {
-        
+    public init(reactor: NKReactor<S, A>) {
         self.reactor = reactor
         
         super.init(nibName: nil, bundle: nil)
@@ -25,7 +24,16 @@ open class NKReactViewController<State: NKInitable, Action>: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         self.setupState()
+        self.setupRx()
     }
     
-    open func setupState() {}
+    open func setupState() {
+        
+    }
+    
+    open func setupRx() {
+        
+    }
+    
 }
+

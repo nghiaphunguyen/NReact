@@ -10,8 +10,6 @@ import Foundation
 import RxSwift
 
 public protocol NKStatable {
-    associatedtype NKState: NKInitable
-    
-    var stateObservable: Observable<NKState> {get}
+    associatedtype NKState
     var state: NKState {get}
 }

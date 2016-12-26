@@ -10,6 +10,5 @@ import Foundation
 
 public protocol NKActionable {
     associatedtype NKAction
-    
-    func execute(action: NKAction)
+    var action: NKAction {get}
 }

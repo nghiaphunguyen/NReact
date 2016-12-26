@@ -14,13 +14,9 @@
 		186026321DBF2DB800014635 /* NReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186026311DBF2DB800014635 /* NReactTests.swift */; };
 		1860263D1DBF2DB800014635 /* NReactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860263C1DBF2DB800014635 /* NReactUITests.swift */; };
 		188510E81E06272800CFA653 /* NKReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510DF1E06272800CFA653 /* NKReactor.swift */; };
-		188510E91E06272800CFA653 /* NKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E01E06272800CFA653 /* NKStore.swift */; };
 		188510EA1E06272800CFA653 /* NKActionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E21E06272800CFA653 /* NKActionable.swift */; };
-		188510EB1E06272800CFA653 /* NKIntable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E31E06272800CFA653 /* NKIntable.swift */; };
 		188510EC1E06272800CFA653 /* NKReactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E41E06272800CFA653 /* NKReactable.swift */; };
 		188510ED1E06272800CFA653 /* NKStatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E51E06272800CFA653 /* NKStatable.swift */; };
-		188510EE1E06272800CFA653 /* NKStateMutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E61E06272800CFA653 /* NKStateMutable.swift */; };
-		188510EF1E06272800CFA653 /* NKStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510E71E06272800CFA653 /* NKStorable.swift */; };
 		188510F31E06388600CFA653 /* NKSyncWorkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510F21E06388600CFA653 /* NKSyncWorkable.swift */; };
 		188511011E063B7100CFA653 /* NKAsyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FD1E063B7100CFA653 /* NKAsyncWorker.swift */; };
 		188511021E063B7100CFA653 /* NKJustAsyncWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */; };
@@ -64,13 +60,9 @@
 		1860263C1DBF2DB800014635 /* NReactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NReactUITests.swift; sourceTree = "<group>"; };
 		1860263E1DBF2DB800014635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188510DF1E06272800CFA653 /* NKReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKReactor.swift; sourceTree = "<group>"; };
-		188510E01E06272800CFA653 /* NKStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStore.swift; sourceTree = "<group>"; };
 		188510E21E06272800CFA653 /* NKActionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKActionable.swift; sourceTree = "<group>"; };
-		188510E31E06272800CFA653 /* NKIntable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKIntable.swift; sourceTree = "<group>"; };
 		188510E41E06272800CFA653 /* NKReactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKReactable.swift; sourceTree = "<group>"; };
 		188510E51E06272800CFA653 /* NKStatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStatable.swift; sourceTree = "<group>"; };
-		188510E61E06272800CFA653 /* NKStateMutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStateMutable.swift; sourceTree = "<group>"; };
-		188510E71E06272800CFA653 /* NKStorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStorable.swift; sourceTree = "<group>"; };
 		188510F21E06388600CFA653 /* NKSyncWorkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSyncWorkable.swift; sourceTree = "<group>"; };
 		188510FD1E063B7100CFA653 /* NKAsyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKAsyncWorker.swift; sourceTree = "<group>"; };
 		188510FE1E063B7100CFA653 /* NKJustAsyncWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKJustAsyncWorker.swift; sourceTree = "<group>"; };
@@ -197,7 +189,6 @@
 			children = (
 				188510FC1E063B7100CFA653 /* Worker */,
 				188510DF1E06272800CFA653 /* NKReactor.swift */,
-				188510E01E06272800CFA653 /* NKStore.swift */,
 				188511051E063F1C00CFA653 /* NKReactViewController.swift */,
 			);
 			path = Classes;
@@ -208,11 +199,8 @@
 			children = (
 				188511071E06465800CFA653 /* NKAsyncWorkable.swift */,
 				188510E21E06272800CFA653 /* NKActionable.swift */,
-				188510E31E06272800CFA653 /* NKIntable.swift */,
 				188510E41E06272800CFA653 /* NKReactable.swift */,
 				188510E51E06272800CFA653 /* NKStatable.swift */,
-				188510E61E06272800CFA653 /* NKStateMutable.swift */,
-				188510E71E06272800CFA653 /* NKStorable.swift */,
 				188510F21E06388600CFA653 /* NKSyncWorkable.swift */,
 			);
 			path = Protocols;
@@ -523,16 +511,12 @@
 				188511021E063B7100CFA653 /* NKJustAsyncWorker.swift in Sources */,
 				1860261D1DBF2DB800014635 /* AppDelegate.swift in Sources */,
 				188511081E06465800CFA653 /* NKAsyncWorkable.swift in Sources */,
-				188510EE1E06272800CFA653 /* NKStateMutable.swift in Sources */,
 				188510EC1E06272800CFA653 /* NKReactable.swift in Sources */,
-				188510E91E06272800CFA653 /* NKStore.swift in Sources */,
 				188510ED1E06272800CFA653 /* NKStatable.swift in Sources */,
 				188510E81E06272800CFA653 /* NKReactor.swift in Sources */,
 				188511031E063B7100CFA653 /* NKJustSyncWoker.swift in Sources */,
-				188510EB1E06272800CFA653 /* NKIntable.swift in Sources */,
 				188511011E063B7100CFA653 /* NKAsyncWorker.swift in Sources */,
 				188510F31E06388600CFA653 /* NKSyncWorkable.swift in Sources */,
-				188510EF1E06272800CFA653 /* NKStorable.swift in Sources */,
 				188511041E063B7100CFA653 /* NKSyncWorker.swift in Sources */,
 				188511061E063F1C00CFA653 /* NKReactViewController.swift in Sources */,
 				188510EA1E06272800CFA653 /* NKActionable.swift in Sources */,

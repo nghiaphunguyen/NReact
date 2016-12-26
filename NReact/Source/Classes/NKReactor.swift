@@ -9,14 +9,12 @@
 import Foundation
 import RxSwift
 
-open class NKReactor<State: NKInitable, Action>: NKStore<State>, NKReactable {
-    public typealias NKAction = Action
-    
-    open var stateObservable: Observable<NKState> {
-        return self.rx_state.asObservable().observeOn(MainScheduler.instance)
+public class NKReactor<State, Action>: NSObject, NKReactable {
+    public var state: State {
+        return self as! State
     }
     
-    open func execute(action: NKAction) {
-        fatalError("Function hasn't implemented yet.")
+    public var action: Action {
+        return self as! Action
     }
 }
